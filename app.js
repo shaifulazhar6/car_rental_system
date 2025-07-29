@@ -155,7 +155,7 @@ app.post('/add-car', upload.single('image'), (req, res) => {
   if (req.file) {
   image = req.file.filename; // filename now uses the unique name
   } else {
-  console.log("⚠️ No image uploaded");
+  console.log("No image uploaded");
   }
 
 
@@ -296,4 +296,4 @@ app.post('/checkout', checkAuthenticated, (req, res) => {
 });
 
 // ========== [12] START SERVER ========== //
-app.listen(3000, () => console.log('🚗 Car Rental app running on http://localhost:3000'));
+app.listen(3000, () => console.log('Car Rental app running on http://localhost:3000'));
